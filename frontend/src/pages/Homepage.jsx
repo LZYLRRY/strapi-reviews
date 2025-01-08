@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Homepage() {
   const { loading, error, data } = useFetch(
-    "http://localhost:1337/api/reviews"
+    import.meta.env.VITE_DB_HOST + "/api/reviews"
   );
 
   // Add this to see the exact data structure
